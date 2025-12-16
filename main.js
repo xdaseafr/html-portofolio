@@ -83,3 +83,7 @@ function cariNama() {
     hasil.textContent = "Nama tidak ditemukan";
   }
 }
+
+if (event.key === "Enter") {
+  cariNama();
+}
