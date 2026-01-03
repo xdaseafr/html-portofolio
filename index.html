@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .font-size-kementerian {
+    font-size: 17px;
+    font-weight: bold;
+  }
+</style>
+
+<body>
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar" aria-label="Offcanvas navbar large">
+    <img src="./assets/Logo_imipas.png" alt="logo kementerian imigrasi dan pemasyarakatan" width="100">
+    <div class="container-fluid"> <a class="navbar-brand" href="#">Rutan Kelas IIB Sinjai</a> <button
+        class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+        aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+        aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Rutan Kelas IIB Sinjai</h5> <button type="button"
+            class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Profil</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="./link.html">Media</a> </li>
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="laporan.html">Pengaduan</a></li>
+                <li><a class="dropdown-item" href="#">Tentang</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Pejabat Struktural</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Layanan
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="laporan.html">Administrasi</a></li>
+                <li><a class="dropdown-item" href="#">Pusat Terpadu Satu Pintu</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3 mt-lg-0" role="search"> <input class="form-control me-2" type="search"
+              placeholder="Search" aria-label="Search"> <button class="btn btn-outline-success"
+              type="submit">Search</button> </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fitur PopUp -->
+  <div id="overlay" class="overlay hidden">
+    <div class="popup">
+      <button class="close" id="btnClose">&times;</button>
+
+      <h2>Pengumuman</h2>
+
+      <div class="banner">
+        <h3>Rutan Kelas IIB Sinjai</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sequi laboriosam doloremque aut facere facilis
+          voluptatibus, tempore iure dolores error aliquam voluptatum reprehenderit? Labore quis praesentium obcaecati
+          assumenda porro consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus odit deserunt ducimus necessitatibus
+          eius aspernatur fugiat quae perferendis culpa? Quisquam laboriosam sint officia odit ipsa inventore quae qui
+          placeat.</p>
+      </div>
+
+      <i>
+        Dev by Rutan Kelas IIB Sinjai
+      </i>
+    </div>
+  </div>
+
+  <!-- introduction -->
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom"> <a href="/"
+        class="d-flex align-items-center text-body-emphasis text-decoration-none"> <img src="./assets/Logo_imipas.png"
+          alt="logo kementerian imigrasi dan pemasyarakatan" width="100"> <span class="fs-4"> Rutan Kelas IIB
+          Sinjai</span> </a> </header>
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Kementerian Imigrasi dan Pemasyarakatan</h1>
+        <p class="col-md-8 fs-4">Pemasyarakatan (atau lebih tepatnya, bidang pemasyarakatan) bertujuan mengatur dan
+          membina narapidana serta tahanan agar dapat kembali menjadi anggota masyarakat yang baik setelah menjalani
+          hukuman.
+
+          Tugas utamanya meliputi:
+        <ol>
+          <li>Pengelolaan lembaga pemasyarakatan (lapas) dan rumah tahanan negara (rutan).</li>
+          <li>Pembinaan narapidana, baik secara mental, sosial, maupun keterampilan kerja.</li>
+          <li>Pelaksanaan reintegrasi sosial, seperti pembebasan bersyarat dan cuti bersyarat.</li>
+          <li>Perlindungan hak-hak tahanan dan narapidana.</li>
+        </ol>
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/Jadwal kunjungan.jpg" class="d-block w-100" alt="rutan sinjai" height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/Ketentuan kunjungan.jpg" class="d-block w-100" alt="rutan sinjai" height="600">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  </div>
+
+  <!-- Image Office -->
+
+  <div class="container">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/Rutan Sinjai foto.jpg" class="d-block w-100" alt="rutan sinjai" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/rutan sinjai.jpeg" class="d-block w-100" alt="rutan sinjai" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/rutansinjai1.jpeg" class="d-block w-100" alt="rutan sinjai" height="500">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+
+  <!-- News -->
+
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button"
+                  class="btn btn-sm btn-outline-secondary btn-news"><a>View</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top"
+            height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div> <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hitung Warga Binaan -->
+  <div class="container">
+    <div class="resident-count">
+      <p>Jumlah Warga Binaan Rutan Kelas IIB Sinjai</p>
+      <h1 class="counter" data-target="187">0</h1>
+    </div>
+  </div>
+
+  <!--Tombol Media Social -->
+  <div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-google"></i></a>
+    <a href="#" class="whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+  </div>
+
+  <!-- Pencarian Nama Tahanan -->
+
+
+  <h1 class="judul-pencarian-nama bg-light">Cari Nama Narapidana/Tahanan</h1>
+  <div class="carinama">
+    <input type="text" id="inputNama" class="inputnama" placeholder="Masukkan nama" onkeydown="tekanEnter(event)">
+    <button class="tombol-cari-nama" onclick="cariNama()">Cari</button>
+
+    <p id="hasil"></p>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="bg-secondary-subtle mt-3">
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top ">
+        <div class="col mb-3"> <a href="/"
+            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            aria-label="Bootstrap col-6"><img src="./assets/Logo_imipas.png" alt="logo Kementerian" width="100"></a>
+          <h5 class="text-body-secondary font-size-kementerian">
+            Kementerian Imigrasi Dan Pemasyarakatan
+            Kanwil Direktorat Jenderal Pemasyarakatan Sulsel
+            Rumah Tahanan Negara Kelas IIB Sinjai</h5>
+        </div>
+        <div class="col mb-3"></div>
+        <div class="col mb-3">
+          <h5>Instansi Terkait</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ditjen Pemasyarakatan</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kepolisian RI</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kejaksaan RI</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Mahkamah Agung RI</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Peradi</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>Profil Unit Pelaksana Teknis</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sejarah Pemasyarakatan</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Selayang Pandang Satuan
+                Kerja</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kedudukan Tugas dan
+                Fungsi</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Visi Misi dan Tata Nilai</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Mars Pemasyarakatan</a></li>
+          </ul>
+        </div>
+        <iframe class="col-sm-6"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8451579422!2d120.25041197353876!3d-5.12863180189476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbc25d7be14bb21%3A0x1df1482e91046273!2sRumah%20Tahanan%20Negara%20Kelas%20IIB%20Sinjai!5e0!3m2!1sid!2sid!4v1765462160401!5m2!1sid!2sid"
+          width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <i class="bi bi-instagram "></i>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzC-EtNGJ5LGDvrrxsk0MdyvDOUWYW2BJzLQ2iyVg7pYUmI0CIxk6WhrYL9_derSo8DSA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
